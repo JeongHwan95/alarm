@@ -21,7 +21,7 @@ public class AlarmController {
         this.alarmService = alarmService;
     }
 
-    Map<Integer, Alarm> alarms = new HashMap<>();
+
     @PostMapping("/alarm")
     public boolean postAlarm(@ModelAttribute ReqDTO reqDTO){
         System.out.println("Controller :: postAlarm :: reqDTO 내부값 확인 " + reqDTO.getManager() );

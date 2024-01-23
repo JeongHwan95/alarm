@@ -10,7 +10,7 @@ public class ResDTO {
     private String title;
     private String content;
     private String manager;
-    private String password;
+
     private String date;
 
     public ResDTO(Alarm alarm){
@@ -18,7 +18,7 @@ public class ResDTO {
         this.title = alarm.getTitle();
         this.content = alarm.getContent();
         this.manager = alarm.getManager();
-        this.password = alarm.getPassword();
+
         this.date = alarm.getDate();
     }
 }
