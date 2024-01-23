@@ -2,14 +2,11 @@ package com.sparta.alarm.controller;
 
 import com.sparta.alarm.dto.ReqDTO;
 import com.sparta.alarm.dto.ResDTO;
-import com.sparta.alarm.entity.Alarm;
 import com.sparta.alarm.service.AlarmService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/api")

@@ -1,16 +1,10 @@
 package com.sparta.alarm.repository;
 
 import com.sparta.alarm.entity.Alarm;
-import lombok.Getter;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.HashMap;
-import java.util.Map;
 
-@Repository
-public class AlarmRepository {
+public interface AlarmRepository extends JpaRepository<Alarm, Integer> {
 
-    @Getter
-    Map<Integer, Alarm> alarms = new HashMap<>();
 
 }
